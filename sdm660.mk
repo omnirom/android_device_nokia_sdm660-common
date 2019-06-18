@@ -52,18 +52,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES_DEBUG += \
     bootctl
 
-PRODUCT_PACKAGES += \
-    update_engine \
-    update_verifier
-
 PRODUCT_STATIC_BOOT_CONTROL_HAL := \
     bootctrl.sdm660 \
     libcutils \
     libgptutils \
     libz
-
-PRODUCT_PACKAGES_DEBUG += \
-    update_engine_client
 
 # AID/fs configs
 PRODUCT_PACKAGES += \
@@ -154,6 +147,16 @@ PRODUCT_PACKAGES += \
 # Vendor default.prop
 PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/configs/vendor_default.prop:system/etc/vendor_default.prop
+
+# Update engine
+PRODUCT_PACKAGES += \
+    brillo_update_payload \
+    update_engine \
+    update_engine_sideload \
+    update_verifier
+
+PRODUCT_PACKAGES_DEBUG += \
+    update_engine_client
 
 # Whitelist
 PRODUCT_COPY_FILES += \
