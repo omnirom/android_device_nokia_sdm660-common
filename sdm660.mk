@@ -125,6 +125,12 @@ PRODUCT_PACKAGES += \
     Tag \
     com.android.nfc_extras
 
+# Omni charger
+PRODUCT_PACKAGES += \
+    omni_charger_res_images \
+    animation.txt \
+    font_charger.png
+
 # Permissions
 PRODUCT_COPY_FILES += \
 	$(COMMON_PATH)/permissions/com.evenwell.datacollect.xml:system/etc/permissions/com.evenwell.datacollect.xml \
