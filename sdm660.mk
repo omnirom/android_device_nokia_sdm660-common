@@ -23,13 +23,16 @@ $(call inherit-product, vendor/nokia/sdm660-common/sdm660-common-vendor.mk)
 DEVICE_PACKAGE_OVERLAYS += \
     $(COMMON_PATH)/overlay
 
+# CarrierConfig overlay
+PRODUCT_PACKAGE_OVERLAYS += \
+    vendor/omni/overlay/CarrierConfig
+
 # AB update support
 AB_OTA_UPDATER := true
 
 AB_OTA_PARTITIONS += \
     boot \
-    system \
-    vendor
+    system
 
 AB_OTA_POSTINSTALL_CONFIG += \
     RUN_POSTINSTALL_system=true \
@@ -52,7 +55,7 @@ PRODUCT_STATIC_BOOT_CONTROL_HAL := \
     bootctrl.sdm660 \
     libcutils \
     libgptutils \
-    libz \
+    libz
 
 PRODUCT_PACKAGES_DEBUG += \
     update_engine_client
@@ -70,7 +73,7 @@ PRODUCT_COPY_FILES += \
 
 # Camera
 PRODUCT_PACKAGES += \
-    Snap
+    SnapdragonCamera2
 
 # Display
 PRODUCT_PACKAGES += \
@@ -80,9 +83,7 @@ PRODUCT_PACKAGES += \
 # HIDL
 PRODUCT_PACKAGES += \
     android.hidl.base@1.0 \
-    android.hidl.base@1.0_system \
-    android.hidl.manager@1.0 \
-    android.hidl.manager@1.0_system
+    android.hidl.manager@1.0
 
 # Init
 PRODUCT_PACKAGES += \

@@ -65,6 +65,9 @@ BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(COMMON_PATH)/bluetooth
 # Charger
 BOARD_CHARGER_ENABLE_SUSPEND := true
 
+# Command Line Tools
+BOARD_INCLUDE_CMDLINE_TOOLS := true
+
 # Dexpreopt
 ifeq ($(HOST_OS),linux)
   ifneq ($(TARGET_BUILD_VARIANT),eng)
@@ -117,6 +120,8 @@ BOARD_ROOT_EXTRA_SYMLINKS := \
 TARGET_PROVIDES_QTI_TELEPHONY_JAR := true
 
 # Sepolicy
+include vendor/omni/sepolicy/sepolicy.mk
+
 BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(COMMON_PATH)/sepolicy/private
 
 BOARD_PLAT_PRIVATE_SEPOLICY_DIR += device/qcom/sepolicy/private
@@ -127,7 +132,6 @@ TARGET_SYSTEM_PROP := $(COMMON_PATH)/system.prop
 
 # Vendor
 TARGET_COPY_OUT_VENDOR := vendor
-BOARD_PREBUILT_VENDORIMAGE := true
 
 # VNDK
 BOARD_VNDK_VERSION := current
