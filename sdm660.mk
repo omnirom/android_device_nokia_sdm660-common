@@ -27,6 +27,9 @@ DEVICE_PACKAGE_OVERLAYS += \
 PRODUCT_PACKAGE_OVERLAYS += \
     vendor/omni/overlay/CarrierConfig
 
+# Properties
+-include $(COMMON_PATH)/system_props.mk
+
 # AB update support
 AB_OTA_UPDATER := true
 
