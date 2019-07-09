@@ -1,7 +1,7 @@
 [
   {
     "remote": "omnirom",
-    "repository": "kernel_nokia_sdm660",
+    "repository": "android_kernel_nokia_sdm660",
     "target_path": "kernel/nokia/sdm660",
     "revision": "android-9.0"
   },
