@@ -71,6 +71,29 @@ lib/libmmosal.so
 lib/libmmparser_lite.so
 lib/libOmxMux.so
 
+# NFC
+-app/NQNfcNci/NQNfcNci.apk
+-app/NfcSec/NfcSec.apk
+-app/SecureElement/SecureElement.apk
+etc/libnfc-nci.conf
+etc/nqnfcee_access.xml
+etc/nqnfcse_access.xml
+etc/permissions/com.gsma.services.nfc.xml
+etc/permissions/com.nxp.nfc.nq.xml
+-framework/com.android.nfc_extras.jar
+-framework/com.gsma.services.nfc.jar
+-framework/com.gsma.services.nfc.sec.jar
+-framework/com.nxp.nfc.nq.jar
+lib/android.hardware.secure_element@1.0.so
+lib/libnfc-sec.so
+lib/libnfc_sec_jni.so
+lib/vendor.sec.hardware.nfc@1.1.so
+lib64/android.hardware.secure_element@1.0.so
+lib64/libnfc-sec.so
+lib64/libnfc_sec_jni.so
+lib64/vendor.sec.hardware.nfc@1.1.so
+-priv-app/TagGoogle/TagGoogle.apk
+
 # Telephony
 -app/QtiTelephonyService/QtiTelephonyService.apk
 etc/permissions/qcrilhook.xml

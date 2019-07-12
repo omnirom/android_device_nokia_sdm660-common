@@ -106,11 +106,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     netutils-wrapper-1.0
 
-# NFC
+# NFC - NCI
 PRODUCT_PACKAGES += \
-    NfcNci \
-    Tag \
-    com.android.nfc_extras
+    android.hardware.nfc@1.1 \
+    android.hardware.nfc@1.0
 
 # RCS
 PRODUCT_PACKAGES += \
