@@ -106,11 +106,29 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     netutils-wrapper-1.0
 
-# NFC
+# NFC - NQ
 PRODUCT_PACKAGES += \
-    NfcNci \
+    NQNfcNci \
+    com.android.nfc_extras \
+    com.nxp.nfc.nq \
+    com.nxp.nfc.nq.xml \
+    libnqnfc-nci \
+    libnqp61-jcop-kit \
+    nfc_nci.nqx.default \
+    nqnfcee_access.xml \
+    nqnfcse_access.xml \
+    android.hardware.nfc@1.0 \
+    android.hardware.nfc@1.1 \
+    vendor.nxp.hardware.nfc@1.0 \
+
+# NFC - Secure Element
+PRODUCT_PACKAGES += \
+    android.hardware.secure_element@1.0 \
+    SecureElement
+
+# NFC - Tag
+PRODUCT_PACKAGES += \
     Tag \
-    com.android.nfc_extras
 
 # RCS
 PRODUCT_PACKAGES += \
