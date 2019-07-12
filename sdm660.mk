@@ -106,11 +106,15 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     netutils-wrapper-1.0
 
-# NFC
+# NFC - NCI
 PRODUCT_PACKAGES += \
-    NfcNci \
-    Tag \
-    com.android.nfc_extras
+    android.hardware.nfc@1.1 \
+    android.hardware.nfc@1.0 \
+    com.android.nfc_extras \
+    SecureElement
+
+PRODUCT_COPY_FILES += \
+    $(COMMON_PATH)/configs/libnfc-nci.conf:system/etc/libnfc-nci.conf
 
 # RCS
 PRODUCT_PACKAGES += \
