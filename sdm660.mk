@@ -131,6 +131,10 @@ PRODUCT_PACKAGES += \
     animation.txt \
     font_charger.png
 
+# Omni display
+PRODUCT_PACKAGES += \
+    OmniDisplayManager
+
 # Permissions
 PRODUCT_COPY_FILES += \
 	$(COMMON_PATH)/permissions/com.evenwell.datacollect.xml:system/etc/permissions/com.evenwell.datacollect.xml \
