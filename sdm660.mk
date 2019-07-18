@@ -108,9 +108,23 @@ PRODUCT_PACKAGES += \
 
 # NFC
 PRODUCT_PACKAGES += \
-    NfcNci \
+    NQNfcNci \
     Tag \
-    com.android.nfc_extras
+    SecureElement \
+    libnqnfc-nci \
+    libnqnfc_nci_jni \
+    nfc_nci.nqx.default \
+    libp61-jcop-kit \
+    com.nxp.nfc.nq \
+    com.nxp.nfc.nq.xml \
+    nqnfcee_access.xml \
+    nqnfcse_access.xml \
+    com.android.nfc_extras \
+    vendor.nxp.hardware.nfc@1.1-service \
+    nfc_nci.nqx.default.hw
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/libnfc-nci.conf:$(TARGET_COPY_OUT_SYSTEM)/etc/libnfc-nci.conf
 
 # Permissions
 PRODUCT_COPY_FILES += \
