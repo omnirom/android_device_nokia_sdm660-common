@@ -39,6 +39,13 @@
 
     <!-- The default tiles to display in QuickSettings -->
     <string name="quick_settings_tiles_default" translatable="false">
-        wifi,bt,dnd,flashlight,rotation,battery,cell,airplane,night
+        wifi,cell,bt,dnd,flashlight,rotation,location,battery,airplane,night
     </string>
+
+    <!-- The number of columns in the QuickSettings -->
+    <integer name="quick_settings_num_columns">4</integer>
+
+    <!-- The number of rows in the QuickSettings -->
+    <integer name="quick_settings_num_rows">2</integer>
+
 </resources>
