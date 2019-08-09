@@ -121,9 +121,20 @@ PRODUCT_PACKAGES += \
 
 # NFC
 PRODUCT_PACKAGES += \
-    NfcNci \
-    Tag \
-    com.android.nfc_extras
+    com.android.nfc_extras \
+    com.gsma.services.nfc \
+    com.nxp.nfc.nq \
+    NQNfcNci \
+    Tag
+
+PRODUCT_PACKAGES += \
+    vendor.nxp.hardware.nfc@1.1-service
+
+PRODUCT_PACKAGES += \
+    nfc_nci.nqx.default.hw
+
+PRODUCT_COPY_FILES += \
+    $(COMMON_PATH)/configs/libnfc-nci.conf:system/etc/libnfc-nci.conf
 
 # Omni charger
 PRODUCT_PACKAGES += \
