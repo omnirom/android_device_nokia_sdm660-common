@@ -28,5 +28,11 @@
     "repository": "android_packages_apps_OmniDisplayManager",
     "target_path": "packages/apps/OmniDisplayManager",
     "revision": "android-9.0"
+  },
+  {
+    "remote": "omnirom",
+    "repository": "android_bootable_recovery",
+    "target_path": "bootable/recovery-twrp",
+    "revision": "android-9.0"
   }
 ]
