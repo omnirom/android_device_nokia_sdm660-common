@@ -6,3 +6,6 @@
 
 # Audio
 /system/etc/audio_policy_configuration.xml    u:object_r:vendor_configs_file:s0
+
+# Props
+/system/etc/vendor_default.prop               u:object_r:vendor_file:s0
