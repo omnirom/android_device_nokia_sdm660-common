@@ -102,8 +102,8 @@ PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/keylayout/goodix_fp.kl:system/usr/keylayout/goodix_fp.kl \
 
 # Media
-PRODUCT_COPY_FILES += \
-    $(COMMON_PATH)/configs/media_profiles_vendor.xml:system/etc/media_profiles_vendor.xml
+#PRODUCT_COPY_FILES += \
+#    $(COMMON_PATH)/configs/media_profiles_vendor.xml:system/etc/media_profiles_vendor.xml
 
 # Net
 PRODUCT_PACKAGES += \
