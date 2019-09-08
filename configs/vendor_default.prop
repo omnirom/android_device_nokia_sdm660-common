@@ -13,3 +13,4 @@ ro.bt.bdaddr_path=/proc/bt_mac
 ro.bluetooth.emb_wp_mode=false
 ro.bluetooth.wipower=false
 ro.product.first_api_level=26
+persist.vendor.usb.config=none
